@@ -2,7 +2,7 @@
 faceDetector = vision.CascadeObjectDetector();
 
 % Read a video frame and run the detector.
-videoFileReader = vision.VideoFileReader('visionface.avi');
+videoFileReader = vision.VideoFileReader('face.mov');
 videoFrame      = step(videoFileReader);
 bbox            = step(faceDetector, videoFrame);
 
